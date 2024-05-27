@@ -8,6 +8,11 @@ import { ListEmployeeComponent } from './components/list-employee/list-employee.
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'allEmployees',
+    pathMatch: 'full',
+  },
+  {
+    path: 'allEmployees',
     component: ListEmployeeComponent,
   },
   {

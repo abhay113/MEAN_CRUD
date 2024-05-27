@@ -1,5 +1,18 @@
-<nav>
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="addEmployee">Add Employee</a>
-    <a routerLink="editEmployee">Edit EMployee</a>
+<nav class=" navbar navbar-expand-lg  bg-body-tertiary">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">Angular Crud App </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-xl" routerLink="/allEmployees" routerLinkActive="active">All Employees</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-xl" routerLink="addEmployee">Add Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-xl" routerLink="editEmployee">Edit EMployee</a>
+            </li>
+        </ul>
+    </div>
 </nav>

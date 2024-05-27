@@ -9,6 +9,8 @@ import { ListEmployeeComponent } from './components/list-employee/list-employee.
 import { RouterModule } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,16 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AddEmployeeComponent,
     EditEmployeeComponent,
     ListEmployeeComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,RouterModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
