@@ -17,8 +17,8 @@ export class MyServiceService {
     return this.http.get(`${this.uri}/editEmployee/${empId}`);
   }
 
-  editEmployee(id: any, body: JSON) {
-    return this.http.post(`${this.uri}/updateEmployee/${id}`, body);
+  editEmployee(empId: any, body: JSON) {
+    return this.http.post(`${this.uri}/updateEmployee/${empId}`, body);
   }
 
   addEmployee(body: JSON) {
